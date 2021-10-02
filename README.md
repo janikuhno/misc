@@ -1,2 +1,2 @@
 ### Miscellaneous collection of small programs
-Mostly use this for learning and testing.
+Mostly using this for learning and testing different approaches and languages.
