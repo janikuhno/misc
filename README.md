@@ -5,7 +5,6 @@ Mostly used to learn data structures and algorithms in JavaScript.
 
 # To add
 
-- Stacks
 - Hash Map
 - Trees
 - Heaps
