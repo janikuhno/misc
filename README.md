@@ -1,7 +1,8 @@
-### Miscellaneous collection of small programs
-Mostly using this for learning and testing different approaches and languages.
+### Miscellaneous collection of small programs, data structures, and algorithms
+A collection of various small programs, data structures, and algorithms I've made.
+Mostly used to learn data structures and algorithms in JavaScript.
+
 # To add
-+ Node
 + Linked List
 + Queues
 + Stacks
@@ -13,6 +14,7 @@ Mostly using this for learning and testing different approaches and languages.
 + Sorting (bubble, merge, quick)
 + Binary Search & Search Tree
 + Graph Traversals
+
 # Examples
 + First Recurring Char
 + How Many Ways to Decode a Message
