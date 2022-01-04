@@ -5,7 +5,6 @@ Mostly used to learn data structures and algorithms in JavaScript.
 
 # To add
 
-- Graphs
 - Recursion
 - Sorting (bubble, merge, quick)
 - Binary Search & Search Tree
