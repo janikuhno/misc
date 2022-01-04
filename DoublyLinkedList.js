@@ -1,4 +1,4 @@
-const Node = require("./Node");
+const Node = require("./DoublyLinkedListNode");
 
 class DoublyLinkedList {
   constructor() {
