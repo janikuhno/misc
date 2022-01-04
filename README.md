@@ -1,18 +1,27 @@
-### Miscellaneous collection of small programs, data structures, and algorithms
+### Miscellaneous collection of data structures and algorithms
 
-A collection of various small programs, data structures, and algorithms I've made.
-Mostly used to learn data structures and algorithms in JavaScript.
+A collection of various data structures and algorithms.
+Mostly used to learn them in JavaScript.
 
-# To add
+#### Data structures
+
+- Node
+- Singly Linked List
+- Doubly Linked List
+- Queue
+- Stack
+- Hash Map
+- Tree
+- Heap
+- Graph
+
+#### Algorithms
 
 - Recursion
-- Sorting (bubble, merge, quick)
-- Binary Search & Search Tree
-- Graph Traversals
-
-# Examples
-
-- First Recurring Char
-- How Many Ways to Decode a Message
-- Recursive Staircase Problem
-- Universal Value Tree
+- Bubble Sort
+- Merge Sort
+- Quicksort
+- Binary Search Tree
+- Graph Traversal
+- String Reduction
+- Trapping Water
