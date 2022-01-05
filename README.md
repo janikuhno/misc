@@ -1,7 +1,7 @@
 ### Miscellaneous collection of data structures and algorithms
 
 A collection of various data structures and algorithms.
-Mostly used to learn them in JavaScript.
+Mostly used to learn them conceptually and in JavaScript.
 
 #### Data structures
 
