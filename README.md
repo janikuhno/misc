@@ -24,7 +24,7 @@ Mostly used to learn them conceptually and in JavaScript.
 - Binary Search Tree
 - Graph Traversal
 
-#### Additional algorithms
+#### Common interview problems
 
 - String Reduction
 - Trapping Water
