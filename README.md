@@ -32,3 +32,4 @@ Mostly used to learn them conceptually and in JavaScript.
 - Custom Comparator Functions
 - Fibonacci
 - Knapsack Problem
+- First Recurring Character
