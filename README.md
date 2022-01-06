@@ -23,5 +23,8 @@ Mostly used to learn them conceptually and in JavaScript.
 - Quicksort
 - Binary Search Tree
 - Graph Traversal
+
+#### Additional algorithms
+
 - String Reduction
 - Trapping Water
