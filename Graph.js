@@ -1,17 +1,13 @@
-const Edge = require("./Edge.js");
-const Vertex = require("./Vertex.js");
-
 class Graph {
-  constructor(isWeighted = false, isDirected = false) {
+  constructor(isDirected = false, isWeighted = false) {
     this.vertices = [];
-    this.isWeighted = isWeighted;
     this.isDirected = isDirected;
+    this.isWeighted = isWeighted;
   }
 
   addVertex(data) {
     const newVertex = new Vertex(data);
     this.vertices.push(newVertex);
-
     return newVertex;
   }
 
@@ -24,7 +20,6 @@ class Graph {
 
     if (vertexOne instanceof Vertex && vertexTwo instanceof Vertex) {
       vertexOne.addEdge(vertexTwo, edgeWeight);
-
       if (!this.isDirected) {
         vertexTwo.addEdge(vertexOne, edgeWeight);
       }
@@ -36,7 +31,6 @@ class Graph {
   removeEdge(vertexOne, vertexTwo) {
     if (vertexOne instanceof Vertex && vertexTwo instanceof Vertex) {
       vertexOne.removeEdge(vertexTwo);
-
       if (!this.isDirected) {
         vertexTwo.removeEdge(vertexOne);
       }
@@ -45,9 +39,57 @@ class Graph {
     }
   }
 
+  getVertexByValue(value) {
+    return this.vertices.find((vertex) => vertex.data === value);
+  }
+
   print() {
-    this.vertices.forEach((vertex) => vertex.print());
+    const vertexList = this.vertices;
+    vertexList.forEach((vertex) => vertex.print());
   }
 }
 
-module.exports = Graph;
+class Vertex {
+  constructor(data) {
+    this.data = data;
+    this.edges = [];
+  }
+
+  addEdge(vertex, weight) {
+    if (vertex instanceof Vertex) {
+      this.edges.push(new Edge(this, vertex, weight));
+    } else {
+      throw new Error("Edge start and end must both be Vertex");
+    }
+  }
+
+  removeEdge(vertex) {
+    this.edges = this.edges.filter((edge) => edge.end !== vertex);
+  }
+
+  print() {
+    const edgeList =
+      this.edges.map((edge) =>
+        edge.weight !== null
+          ? `${edge.end.data} (${edge.weight})`
+          : edge.end.data
+      ) || [];
+
+    const output = `${this.data} --> ${edgeList.join(", ")}`;
+    console.log(output);
+  }
+}
+
+class Edge {
+  constructor(start, end, weight = null) {
+    this.start = start;
+    this.end = end;
+    this.weight = weight;
+  }
+}
+
+module.exports = {
+  Graph,
+  Vertex,
+  Edge,
+};
