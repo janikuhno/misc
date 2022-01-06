@@ -3,20 +3,21 @@
  * Returns the number of ways a given message can be decoded.
  * For example if given the input "12" returns 2 because it can be 'ab' and 'l'.
  * min: 'a' == 1, max: 'z' == 26.
+ * Using memo variable allows us to gain a runtime of O(n).
  */
 
 function decode(data, l, memo) {
   if (l === 0) {
     return 1;
   }
-  startIndx = data.length - l;
+  let startIndx = data.length - l;
   if (data[startIndx] === "0") {
     return 0;
   }
   if (memo[l] != null) {
     return memo[l];
   }
-  result = decode(data, l - 1, memo);
+  let result = decode(data, l - 1, memo);
   if (l >= 2 && parseInt(data.substring(startIndx, startIndx + 2)) <= 26) {
     result += decode(data, l - 2, memo);
   }
@@ -28,11 +29,14 @@ function numWays(data) {
   return decode(data, data.length, memo);
 }
 
-console.log(numWays("")); // return 1
-console.log(numWays("011")); // return 0
-console.log(numWays("12")); // return 2
-console.log(numWays("2345")); // return 5
-console.log(numWays("111")); // return 3
+console.log(numWays(""));       // return 1
+console.log(numWays("011"));    // return 0
+console.log(numWays("12"));     // return 2
+console.log(numWays("123"));    // return 3
+console.log(numWays("1230"));   // return 0
+console.log(numWays("1220"));   // return 2
+console.log(numWays("12321"));  // return 6
+console.log(numWays("111"));    // return 3
 
 /** Mapping data
  const map = {
