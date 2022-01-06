@@ -30,3 +30,4 @@ Mostly used to learn them conceptually and in JavaScript.
 - Trapping Water
 - Sieve Of Eratosthenes
 - Custom Comparator Functions
+- Fibonacci
