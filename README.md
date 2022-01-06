@@ -31,3 +31,4 @@ Mostly used to learn them conceptually and in JavaScript.
 - Sieve Of Eratosthenes
 - Custom Comparator Functions
 - Fibonacci
+- Knapsack Problem
