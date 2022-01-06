@@ -33,3 +33,4 @@ Mostly used to learn them conceptually and in JavaScript.
 - Fibonacci
 - Knapsack Problem
 - First Recurring Character
+- How Many Ways to Decode a Message?
