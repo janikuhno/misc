@@ -29,3 +29,4 @@ Mostly used to learn them conceptually and in JavaScript.
 - String Reduction
 - Trapping Water
 - Sieve Of Eratosthenes
+- Custom Comparator Functions
