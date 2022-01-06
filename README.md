@@ -34,3 +34,4 @@ Mostly used to learn them conceptually and in JavaScript.
 - Knapsack Problem
 - First Recurring Character
 - How Many Ways to Decode a Message?
+- Recursive Staircase Problem
